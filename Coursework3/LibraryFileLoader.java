@@ -1,8 +1,13 @@
 import java.io.IOException;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.regex.Pattern;
+
 
 /** 
  * Class responsible for loading
@@ -68,7 +73,47 @@ public class LibraryFileLoader {
      * @throws UnsupportedOperationException Not implemented yet!
      */
     public List<BookEntry> parseFileContent() {
+    	
         // TODO Remove exception and implement me
-        throw new UnsupportedOperationException("Parsing library files is not yet implemented.");
+    	
+    	//this list contains the information from a csv file.
+    	List<String> content = new ArrayList<>();
+    	content = this.fileContent; 
+    	
+    	//returned list.
+    	List<BookEntry> all = new ArrayList<>();
+    	
+    	for(int i = 1;i<content.size();i++) {
+    		
+    		String[] details = content.get(i).split(",");
+    		
+    		
+    				
+    					
+    				//parse the parameter the constructor of BookEntry.
+    					all.add(new BookEntry(details[0],
+    							              details[1].split("-"),
+    							              Float.parseFloat(details[2]),
+    							              details[3],
+    							              Integer.parseInt(details[4])));
+    					
+    					
+    			
+    				
+    		
+    		
+    				
+    					
+    	}
+    	
+    	return all;
+    	
+        
     }
+    public static void main(String[] args) {
+    	LibraryFileLoader a = new LibraryFileLoader();
+    	a.loadFileContent(Paths.get("C:/Users/Lyw20/Desktop/inf1b-cw3_v0.2/data/books01.csv"));
+    	System.out.println(a.fileContent.toString());
+    }
+   
 }
