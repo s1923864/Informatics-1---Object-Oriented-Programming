@@ -13,5 +13,5 @@ Learning Outcomes
 Clone this repository and compile the code as per the instructions.
 
 ```bash
-git clone https://github.com/s1923864/MEng-Electronics-and-Electrical-Engineering-Project-Phase-One-Internal.git
-cd MEng-Electronics-and-Electrical-Engineering-Project-Phase-One-Internal
+git clone https://github.com/s1923864/Informatics-1---Object-Oriented-Programming.git
+cd Informatics-1---Object-Oriented-Programming
