@@ -8,3 +8,10 @@ Students on this course have a very wide range of backgrounds: some are already 
 Learning Outcomes
 
 
+## Installation
+
+Clone this repository and compile the code as per the instructions.
+
+```bash
+git clone https://github.com/s1923864/MEng-Electronics-and-Electrical-Engineering-Project-Phase-One-Internal.git
+cd MEng-Electronics-and-Electrical-Engineering-Project-Phase-One-Internal
